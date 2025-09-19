@@ -1,2 +1,2 @@
 # Portfolio
-a repo for my portfolio
+A repo for my portfolio
