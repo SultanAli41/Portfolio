@@ -1,0 +1,172 @@
+/* Custom styles to ensure Inter is used and for smooth scrolling */
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    /* Hide the default cursor */
+    cursor: none !important;
+}
+.MyName{
+    color: white;
+    font-size: 4vh;
+}
+/* Style for the project cards on hover (Kept from original) */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Simple focus ring for accessibility (Kept from original) */
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Blue-500 ring */
+}
+
+/* -------------------------------------- */
+/* Custom Animated Cursor Styles */
+/* -------------------------------------- */
+
+/* The main dot cursor */
+#custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #3B82F6; /* Blue-500 */
+    border-radius: 50%;
+    pointer-events: none; /* Allows clicks to pass through */
+    z-index: 9999; /* Ensure it's on top */
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+/* The larger, trailing circle (follower) */
+#cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(59, 130, 246, 0.5); /* Semi-transparent Blue-500 border */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    /* Smooth and responsive movement */
+    transition: transform 0.1s ease-out; 
+}
+
+/* Styles when hovering over interactive elements */
+.hovered {
+    width: 45px !important;
+    height: 45px !important;
+    background-color: transparent !important;
+    border-color: #60A5FA !important; /* Blue-400 border */
+    border-width: 2px !important;
+}
+
+/* Optional: Make the primary dot disappear when hovering (follower takes over) */
+.hovered-dot {
+    background-color: transparent !important;
+}
+/*Skill Sets*/
+.learned{
+    color: white;
+}
+.Clearned{
+    color: #F7DF1E;
+}
+/*Form Animation*/
+/* === Animated Border for Contact Form === */
+@keyframes borderRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-border {
+  position: relative;
+  border-radius: 0.75rem; /* same as Tailwind rounded-xl */
+  padding: 2px; /* thin glowing edge */
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #8b5cf6, #3b82f6);
+  background-size: 300% 300%;
+  animation: borderRotate 6s linear infinite;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #8b5cf6, #3b82f6);
+  background-size: 300% 300%;
+  animation: borderRotate 6s linear infinite;
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.5;
+}
+
+.animated-border > .inner {
+  background-color: #111827; /* same as Tailwind bg-gray-900 */
+  border-radius: inherit;
+  padding: 2rem; /* spacing inside the glowing border */
+}
+/* === Animated Border for Contact Form === */
+@keyframes borderRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-border {
+  position: relative;
+  border-radius: 0.75rem; /* same as Tailwind rounded-xl */
+  padding: 2px; /* thin glowing edge */
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #8b5cf6, #3b82f6);
+  background-size: 300% 300%;
+  animation: borderRotate 6s linear infinite;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 300% 300%;
+  animation: borderRotate 6s linear infinite;
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.5;
+}
+
+.animated-border > .inner {
+  background-color: #111827; /* same as Tailwind bg-gray-900 */
+  border-radius: inherit;
+  padding: 0.1rem; /* spacing inside the glowing border */
+}
+#message-container{
+  height: 100%;
+  width: 100%;
+  
+}
+#final-msg{
+   height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio - Sultan Ali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased">
+
+    <div id="custom-cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <header class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-400">
+                Sultan Ali <span class="text-gray-200">/ Dev</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#skills" class="nav-link text-gray-300 hover:text-blue-400 transition duration-150">Skills</a>
+                <a href="#projects" class="nav-link text-gray-300 hover:text-blue-400 transition duration-150">Projects</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-blue-400 transition duration-150">Contact</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-gray-300 hover:text-blue-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/95 py-2">
+            <a href="#skills" class="block px-4 py-2 text-gray-200 hover:bg-gray-800 transition duration-150">Skills</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-200 hover:bg-gray-800 transition duration-150">Projects</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-200 hover:bg-gray-800 transition duration-150">Contact</a>
+        </div>
+    </header>
+    
+
+    <main>
+        <section id="hero" class="py-20 md:py-32 lg:py-40 text-center container mx-auto px-4 flex flex-col items-center">
+<p class="text-blue-300 text-lg font-medium mb-3 tracking-widest uppercase -mt-3">Hello, I'm Sultan Ali</p>
+            <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold leading-tight mb-4 text-gray-50">
+                A Front-End Developer.
+            </h1>
+            <p class="max-w-3xl text-xl sm:text-2xl text-gray-400 mb-8">
+                Building responsive and accessible web experiences with a focus on clean code and modern standards.
+            </p>
+            <p class="text-lg text-gray-400 mb-10">
+                Proficient in <span class="learned">HTML, CSS, Tailwind CSS, & JavaScript</span>, and currently diving deep into <span class="Clearned">React and Next.js</span> .
+            </p>
+            <a href="#projects" class="interactive btn-primary inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-xl transition duration-300 transform hover:scale-105">
+                View My Projects
+            </a>
+        </section>
+
+        <div class="container mx-auto px-4 my-10">
+            <hr class="border-gray-800">
+        </div>
+<!--Skills Sections-->
+        <section id="skills" class="py-16 md:py-24 container mx-auto px-4">
+  <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">
+    My Toolkit & Learning Path
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Core Proficiencies -->
+    <div
+      class="interactive bg-gray-900 p-8 rounded-xl shadow-lg border border-blue-500/50 transform transition-all duration-500 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] hover:scale-105 hover:border-blue-400"
+    >
+      <h3 class="text-3xl font-semibold mb-6 text-blue-400 flex items-center">
+        <span class="mr-3">⭐</span> Core Proficiencies
+      </h3>
+      <div class="space-y-4 opacity-80 hover:opacity-100 transition-all duration-500">
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#FF5722] mr-3">✓</span> HTML5 (Semantic Structure)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#2965F1] mr-3">✓</span> CSS3 (Layout & Design)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#06B6D4] mr-3">✓</span> Tailwind CSS (Utility-First Styling)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#F7DF1E] mr-3">✓</span> JavaScript (DOM Manipulation, Logic)
+        </div>
+      </div>
+    </div>
+
+    <!-- Currently Learning -->
+    <div
+      class="interactive bg-gray-900 p-8 rounded-xl shadow-lg border border-yellow-500/50 transform transition-all duration-500 hover:shadow-[0_0_25px_rgba(234,179,8,0.6)] hover:scale-105 hover:border-yellow-400"
+    >
+      <h3 class="text-3xl font-semibold mb-6 text-yellow-400 flex items-center">
+        <span class="mr-3">🚀</span> Currently Learning
+      </h3>
+      <div class="space-y-4 opacity-80 hover:opacity-100 transition-all duration-500">
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#61DAFB] mr-3">→</span> React (Components & Hooks)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#C5C6C7] mr-3">→</span> State Management (Context API)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#C5C6C7] mr-3">→</span> Next.js (Full-Stack Framework)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#68A063] mr-3">→</span> Node.js (Backend Fundamentals)
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div
+      class="interactive bg-gray-900 p-8 rounded-xl shadow-lg border border-purple-500/50 transform transition-all duration-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.6)] hover:scale-105 hover:border-purple-400"
+    >
+      <h3 class="text-3xl font-semibold mb-6 text-purple-400 flex items-center">
+        <span class="mr-3">🛠️</span> Tools & Technologies
+      </h3>
+      <div class="space-y-4 opacity-80 hover:opacity-100 transition-all duration-500">
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#007ACC] mr-3">💻</span> VS Code (Main Code Editor)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#F1502F] mr-3">🔧</span> Git (Version Control)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#181717] mr-3">🐙</span> GitHub (Project Hosting)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#000000] mr-3">🚀</span> Vercel (Deployment)
+        </div>
+        <div class="flex items-center text-lg text-gray-300">
+          <span class="text-[#00FFFF] mr-3">🤖</span> Cursor AI (AI-Powered Coding)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container mx-auto px-4 my-10">
+  <hr class="border-gray-800" />
+</div>
+        <div class="container mx-auto px-4 my-10">
+            <hr class="border-gray-800">
+        </div>
+
+        <section id="projects" class="py-16 md:py-24 container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Featured Projects</h2>
+            <p class="text-xl text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+                A selection of responsive web applications and interfaces built using my core skillset.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-800">
+                    <img src="Amazon_Clone.jpg" alt="E-commerce Mockup" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-400">Amazon Static Landing Pages</h3>
+                        <p class="text-gray-400 mb-4">A static Amazon clone featuring structured product listings and detailed item pages, built entirely with HTML and CSS to demonstrate layout design and page structuring.</p>
+                        <p class="text-sm font-medium text-gray-500 mb-4">
+                            <span class="inline-block bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-xs interactive mr-2">HTML</span>
+                            <span class="inline-block bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-xs interactive mr-2">CSS</span>
+                        </p>
+                        <a href="https://github.com/SultanAli41/Amazon-Landing-Page" target="_blank" class="interactive text-blue-500 hover:text-blue-400 font-medium inline-flex items-center mt-2">
+                             View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-800">
+                    <img src="Landing_Pages.jpg" alt="Interactive To-Do List" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-400">Interactive To-Do List</h3>
+                        <p class="text-gray-400 mb-4">A robust application using pure JavaScript to handle CRUD operations, localStorage persistence, and dynamic DOM updates.</p>
+                        <p class="text-sm font-medium text-gray-500 mb-4">
+                            <span class="inline-block bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-xs interactive mr-2">JavaScript</span>
+                            <span class="inline-block bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-xs interactive mr-2">HTML</span>
+                            <span class="inline-block bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-xs interactive">CSS</span>
+                        </p>
+                        <a href="https://github.com/SultanAli41/Landing-Pages" target="_blank" class="interactive text-blue-500 hover:text-blue-400 font-medium inline-flex items-center mt-2">
+                             View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-xl border border-gray-800">
+                    <img src="Dom_Js.jpg" alt="Design Landing Page" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-400">Mini DOM Projects</h3>
+                        <p class="text-gray-400 mb-4">Mini Dom Projects Using JavaScript</p>
+                        <p class="text-sm font-medium text-gray-500 mb-4">
+                            <span class="inline-block bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-xs interactive mr-2">JavaScript</span>
+                            <span class="inline-block bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-xs interactive mr-2">HTML</span>
+                        </p>
+                        <a href="https://github.com/SultanAli41/DOM" target="_blank" class="interactive text-blue-500 hover:text-blue-400 font-medium inline-flex items-center mt-2">
+                            View on GitHub
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-16">
+                 <a href="[Link to GitHub]" target="_blank" class="interactive inline-block border-2 border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    View All Code on GitHub
+                </a>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-4 my-10">
+            <hr class="border-gray-800">
+        </div>
+
+        <section id="contact" class="py-16 md:py-24 container mx-auto px-4 max-w-2xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-50">Get In Touch</h2>
+            <p class="text-xl text-center text-gray-400 mb-8">
+                I'm currently looking for new challenges and opportunities. Let's build something amazing together!
+            </p>
+            <!--
+            <div class="animated-border">
+  <div class="inner">
+      <form  class="interactive space-y-6 bg-gray-900 p-8 rounded-xl shadow-2xl border border-gray-800">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="interactive w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-150" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="interactive w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-150" placeholder="your.email@example.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="interactive w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-150" placeholder="What can I build for you?"></textarea>
+                </div>
+                <button type="submit" class="interactive w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 transform hover:scale-[1.01]">
+                    Send Message
+                </button>
+            </form>
+  </div>
+</div>
+-->
+<div class="animated-border">
+    <div class="inner">
+        <form id="contact-form" class="interactive space-y-6 bg-gray-900 p-8 rounded-xl shadow-2xl border border-gray-800">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                <input type="text" id="name" name="name" required class="interactive w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-150" placeholder="Your Name">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                <input type="email" id="email" name="email" required class="interactive w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-150" placeholder="your.email@example.com">
+            </div>
+            <div>
+                 <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" required class="interactive w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-150" placeholder="What can I build for you?"></textarea>
+            </div>
+            <button type="submit" class="interactive w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 transform hover:scale-[1.01]">
+                Send Message
+            </button>
+        </form>
+       
+        <div id="message-container" class="hidden mt-6">
+            <div  class="  p-1 rounded-xl text-white text-center shadow-xl" id="final-msg">
+                <p class="text-xl font-bold mb-2">Message Sent! 🎉</p>
+                <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>or connect with me directly at:</p>
+                <p class="text-blue-400 text-xl mt-2">Sultanalibalouch512@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-8 mt-10">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm mb-4">&copy; 2025 Sultan Ali. All rights reserved. | Built with HTML, Tailwind CSS, & JavaScript.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/sultan-ali-37243b293/" target="_blank" class="interactive text-gray-400 hover:text-blue-400 transition duration-150">LinkedIn</a>
+                <a href="https://github.com/SultanAli41" target="_blank" class="interactive text-gray-400 hover:text-blue-400 transition duration-150">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
