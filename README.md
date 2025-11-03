@@ -25,8 +25,3 @@ It showcases my skills, projects, and experience as a **Front-End Developer**.
 | **Tailwind CSS** | Utility-first modern CSS framework |
 | **JavaScript (ES6)** | Interactivity and dynamic content |
 
----
-
-## 📁 Folder Structure
-
-it
